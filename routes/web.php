@@ -12,5 +12,18 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome');    
 });
+
+Route::group(
+    [
+    'prefix' => 'admin',
+    'namespace' => 'admin'
+    ], function()
+    {    
+    Route::get('dashboard', 'DashboardController@index');
+    Route::get('category', 'CategorizationContraller@category');
+    Route::get('category/create', 'CategorizationContraller@createCategory');
+    Route::get('subcategory', 'CategorizationContraller@subcategory');
+    Route::get('subcategory/create', 'CategorizationContraller@createsubCategory');
+    });
