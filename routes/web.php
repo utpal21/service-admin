@@ -27,3 +27,15 @@ Route::group(
     Route::get('subcategory', 'CategorizationContraller@subcategory');
     Route::get('subcategory/create', 'CategorizationContraller@createsubCategory');
     });
+
+Route::group(
+    [
+    'prefix' => 'partner',
+    'namespace' => 'partner'
+    ], function()
+    {    
+    Route::resource('dashboard', 'DashboardController');
+    Route::resource('profile', 'ProfileController');
+
+    });
+    
