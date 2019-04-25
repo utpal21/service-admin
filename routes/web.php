@@ -36,6 +36,8 @@ Route::group(
     {    
     Route::resource('dashboard', 'DashboardController');
     Route::resource('profile', 'ProfileController');
+    Route::resource('company_profile', 'CompanyProfileController');
+    Route::resource('order', 'OrderController');
 
     });
     
