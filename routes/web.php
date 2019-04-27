@@ -38,6 +38,27 @@ Route::group(
     Route::resource('profile', 'ProfileController');
     Route::resource('company_profile', 'CompanyProfileController');
     Route::resource('order', 'OrderController');
+    Route::resource('subscription_order', 'SubscriptionOrderController');
+    Route::resource('cancel_request', 'CancelRequestController');
+    Route::resource('job', 'jobController');
+    Route::resource('resource', 'ResourceController');
+    Route::resource('category', 'CategoryController');
+    Route::resource('complain', 'ComplainController');
+    Route::resource('service', 'ServiceController');
+    Route::resource('e_shop', 'EShopController');
+    Route::resource('marketing_panel', 'MarketingPanelController');
+    Route::resource('gift_point', 'GiftPointController');
+    Route::resource('discount', 'DiscountController');
+    Route::resource('surcharge', 'SurchargeController');
+    Route::resource('review', 'ReviewController');
+    Route::resource('loan', 'LoanController');
+    Route::resource('top_up', 'TopUpController');
+    Route::resource('finance', 'FinanceController');
+    Route::resource('report', 'ReportController');
+    Route::resource('help', 'HelpController');
+    Route::resource('terms_condition', 'TermsAndConditionController');
+    Route::resource('offline_online', 'OfflineOnlineController');
+    Route::resource('training', 'TrainingController');
 
     });
     

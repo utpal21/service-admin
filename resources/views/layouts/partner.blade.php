@@ -268,9 +268,33 @@ desired effect
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">HEADER</li>
         <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>
-        <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
-        <li class="treeview">
+        <li @if(Route::currentRouteName() === 'dashboard.index') class="active" @endif><a href="{{url('partner/dashboard')}}"><i class="fa fa-link"></i> <span>Dsahboard</span></a></li>
+        <li @if(Route::currentRouteName() === 'company_profile.index') class="active" @endif><a href="{{url('partner/company_profile')}}"><i class="fa fa-link"></i> <span>Company Profile</span></a></li>
+        <li @if(Route::currentRouteName() === 'order.index') class="active" @endif><a href="{{url('partner/order')}}"><i class="fa fa-link"></i> <span>Orders</span></a></li>
+        <li @if(Route::currentRouteName() === 'subscription_order.index') class="active" @endif><a href="{{url('partner/subscription_order')}}"><i class="fa fa-link"></i> <span>Subscription Orders</span></a></li>
+        <li @if(Route::currentRouteName() === 'cancel_request.index') class="active" @endif><a href="{{url('partner/cancel_request')}}"><i class="fa fa-link"></i> <span>Cancel Requests</span></a></li>
+        <li @if(Route::currentRouteName() === 'job.index') class="active" @endif><a href="{{url('partner/job')}}"><i class="fa fa-link"></i> <span>Jobs</span></a></li>
+        <li @if(Route::currentRouteName() === 'resource.index') class="active" @endif><a href="{{url('partner/resource')}}"><i class="fa fa-link"></i> <span>Resources</span></a></li>
+        <li @if(Route::currentRouteName() === 'category.index') class="active" @endif><a href="{{url('partner/category')}}"><i class="fa fa-link"></i> <span>Category</span></a></li>
+        <li @if(Route::currentRouteName() === 'complain.index') class="active" @endif><a href="{{url('partner/complain')}}"><i class="fa fa-link"></i> <span>Complain</span></a></li>
+        <li @if(Route::currentRouteName() === 'service.index') class="active" @endif><a href="{{url('partner/service')}}"><i class="fa fa-link"></i> <span>Service</span></a></li>
+        <li @if(Route::currentRouteName() === 'e_shop.index') class="active" @endif><a href="{{url('partner/e_shop')}}"><i class="fa fa-link"></i> <span>E-Shop</span></a></li>
+        <li @if(Route::currentRouteName() === 'marketing_panel.index') class="active" @endif><a href="{{url('partner/marketing_panel')}}"><i class="fa fa-link"></i> <span>Marketing Panel</span></a></li>
+        <li @if(Route::currentRouteName() === 'gift_point.index') class="active" @endif><a href="{{url('partner/gift_point')}}"><i class="fa fa-link"></i> <span>Gift Point</span></a></li>
+        <li @if(Route::currentRouteName() === 'discount.index') class="active" @endif><a href="{{url('partner/discount')}}"><i class="fa fa-link"></i> <span>Discount</span></a></li>
+        <li @if(Route::currentRouteName() === 'surcharge.index') class="active" @endif><a href="{{url('partner/surcharge')}}"><i class="fa fa-link"></i> <span>Surcharge</span></a></li>
+        <li @if(Route::currentRouteName() === 'review.index') class="active" @endif><a href="{{url('partner/review')}}"><i class="fa fa-link"></i> <span>Review</span></a></li>
+        <li @if(Route::currentRouteName() === 'loan.index') class="active" @endif><a href="{{url('partner/loan')}}"><i class="fa fa-link"></i> <span>Loan</span></a></li>
+        <li @if(Route::currentRouteName() === 'top_up.index') class="active" @endif><a href="{{url('partner/top_up')}}"><i class="fa fa-link"></i> <span>Top Up</span></a></li>
+        <li @if(Route::currentRouteName() === 'finance.index') class="active" @endif><a href="{{url('partner/finance')}}"><i class="fa fa-link"></i> <span>Finance</span></a></li>
+        <li @if(Route::currentRouteName() === 'report.index') class="active" @endif><a href="{{url('partner/report')}}"><i class="fa fa-link"></i> <span>Reports</span></a></li>
+        <li @if(Route::currentRouteName() === 'profile.index') class="active" @endif><a href="{{url('partner/profile')}}"><i class="fa fa-link"></i> <span>My Account</span></a></li>
+        <li @if(Route::currentRouteName() === 'help.index') class="active" @endif><a href="{{url('partner/help')}}"><i class="fa fa-link"></i> <span>Help</span></a></li>
+        <li @if(Route::currentRouteName() === 'terms_condition.index') class="active" @endif><a href="{{url('partner/terms_condition')}}"><i class="fa fa-link"></i> <span>Terms And Condition</span></a></li>
+        <li @if(Route::currentRouteName() === 'offline_online.index') class="active" @endif><a href="{{url('partner/offline_online')}}"><i class="fa fa-link"></i> <span>Offline/Online</span></a></li>
+        <li @if(Route::currentRouteName() === 'training.index') class="active" @endif><a href="{{url('partner/training')}}"><i class="fa fa-link"></i> <span>Training</span></a></li>
+        
+        {{-- <li class="treeview">
           <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
             <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
@@ -280,7 +304,7 @@ desired effect
             <li><a href="#">Link in level 2</a></li>
             <li><a href="#">Link in level 2</a></li>
           </ul>
-        </li>
+        </li> --}}
       </ul>
       <!-- /.sidebar-menu -->
     </section>
