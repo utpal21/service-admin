@@ -24,7 +24,7 @@ class SurchargeController extends Controller
      */
     public function create()
     {
-        //
+        return view('partner.surcharge.create');
     }
 
     /**

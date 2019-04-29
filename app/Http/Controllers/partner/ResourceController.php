@@ -24,7 +24,7 @@ class ResourceController extends Controller
      */
     public function create()
     {
-        //
+        return view('partner.resource.create');
     }
 
     /**

@@ -24,7 +24,7 @@ class DiscountController extends Controller
      */
     public function create()
     {
-        //
+        return view('partner.discount.create');
     }
 
     /**

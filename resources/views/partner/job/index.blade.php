@@ -43,7 +43,7 @@
                 </div>
                 <div class="col-xs-4">
                         <!-- /.input group -->
-                        <div class="form-group">
+                        <div class="form-group" >
                                 <label>Minimal</label>
                                 <select class="form-control select2" style="width: 100%;">
                                   <option selected="selected">Alabama</option>
