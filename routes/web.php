@@ -21,7 +21,7 @@ Route::group(
     'namespace' => 'admin'
     ], function()
     {    
-    Route::get('dashboard', 'DashboardController@index');
+    Route::get('/', 'DashboardController@index');
     Route::get('category', 'CategorizationContraller@category');
     Route::get('category/create', 'CategorizationContraller@createCategory');
     Route::get('subcategory', 'CategorizationContraller@subcategory');
@@ -34,7 +34,7 @@ Route::group(
     'namespace' => 'partner'
     ], function()
     {    
-    Route::resource('dashboard', 'DashboardController');
+    Route::resource('/', 'DashboardController');
     Route::resource('profile', 'ProfileController');
     Route::resource('company_profile', 'CompanyProfileController');
     Route::resource('order', 'OrderController');

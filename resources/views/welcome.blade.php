@@ -81,7 +81,10 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Laravel <br>
+                    <a class="btn" style="text-decoration: none" href="{{url('admin')}}">Admin Panel</a><br>
+                    <a class="btn" style="text-decoration: none" href="{{url('partner')}}">Partner Panel</a>
+                
                 </div>
 
                 <div class="links">

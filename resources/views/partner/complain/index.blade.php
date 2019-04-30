@@ -2,6 +2,18 @@
 @section('css')
 <link rel="stylesheet" href="{{asset('assets/bower_components/bootstrap-daterangepicker/daterangepicker.css')}}">
 <link rel="stylesheet" href="{{asset('assets/bower_components/select2/dist/css/select2.min.css')}}">
+<style>
+.my-class{
+  margin-top: 25px;
+}
+.extra-class{
+  height: 136px;
+  
+  margin: 0 auto;
+  padding-top: 34px;
+  
+}
+</style>
 @endsection
 @section('content')
 <div class="row">
@@ -26,25 +38,11 @@
                 </div>
             </div>
         </div>
-        <div class="col-xs-4">
-                <!-- /.input group -->
-                <div class="form-group">
-                   
-                        <label>Date range:</label>
-                    <div class="input-group">
-                           
-                      <div class="input-group-addon">
-                        <i class="fa fa-calendar"></i>
-                      </div>
-                      <input type="text" class="form-control" id="reservation">
-                    </div>
-                    <!-- /.input group -->
-                  </div>
-                </div>
+        
                 <div class="col-xs-4">
                         <!-- /.input group -->
                         <div class="form-group" >
-                                <label>Minimal</label>
+                                <label>Status</label>
                                 <select class="form-control select2" style="width: 100%;">
                                   <option selected="selected">Alabama</option>
                                   <option>Alaska</option>
@@ -57,55 +55,40 @@
                               </div>
                               <!-- /.form-group -->
             </div>
-            <div class="col-xs-4">
-                    <!-- /.input group -->
-                    <div class="form-group">
-                            <label>Minimal</label>
-                            <select class="form-control select2" style="width: 100%;">
-                              <option selected="selected">Alabama</option>
-                              <option>Alaska</option>
-                              <option>California</option>
-                              <option>Delaware</option>
-                              <option>Tennessee</option>
-                              <option>Texas</option>
-                              <option>Washington</option>
-                            </select>
-                          </div>
-                          <!-- /.form-group -->
-        </div>
-        <div class="col-xs-4">
-          <!-- /.input group -->
-          <div class="form-group">
-                  <label>Minimal</label>
-                  <select class="form-control select2" style="width: 100%;">
-                    <option selected="selected">Alabama</option>
-                    <option>Alaska</option>
-                    <option>California</option>
-                    <option>Delaware</option>
-                    <option>Tennessee</option>
-                    <option>Texas</option>
-                    <option>Washington</option>
-                  </select>
-                </div>
-                <!-- /.form-group -->
-</div>
-    <div class="col-xs-4">
+    <div class="col-xs-2">
             <!-- /.input group -->
             <div class="form-group">
-                <button class="btn-info">Search</button>
+                <button class="btn btn-block btn-info my-class">Search</button>
                   </div>
                   <!-- /.form-group -->
+</div> 
+<div class="col-xs-2">
+    <!-- /.input group -->
+    <div class="form-group">
+        <button class="btn btn-block btn-danger my-class">Clear</button>
+          </div>
+          <!-- /.form-group -->
 </div> 
 
     </div>
 </div>
 </div>
 
-    <div class="col-xs-3">
 
-    </div>
 
 </div>
+<div class="col-xs-3 bg-blue-gradient extra-class">
+    <div class="from-group">
+      <label for="">Quick link to complain</label>
+        <div class="input-group input-group-sm">
+            <input type="text" class="form-control" placeholder="COMPLAIN ID">
+                <span class="input-group-btn">
+                  <button type="button" class="btn btn-info btn-flat">Search!</button>
+                </span>
+          </div>
+    </div>
+  
+  </div>
 </div>
 
 <div class="row">
