@@ -4,9 +4,18 @@ namespace App\Http\Controllers\admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use GuzzleHttp\Exception\GuzzleException;
+use GuzzleHttp\Client;
 
 class CategorizationContraller extends Controller
 {
+
+  private $client;
+  public function __construct()
+    {
+        //initiallize guzzle client method;
+        $this->client = new Client(); //GuzzleHttp\Client
+    }
     /**
      * Display a listing of the resource.
      *
@@ -35,7 +44,16 @@ class CategorizationContraller extends Controller
      */
     public function store(Request $request)
     {
-        //
+      
+      $response = $this->client->request('POST', 'http://localhost/service-api/public/api/service/register', [
+            'form_params' => [
+                'name' => $request['name']
+            ]
+        ]);
+        $response = $response->getBody()->getContents();
+        echo '<pre>';
+        print_r($response);
+        die();
     }
 
     /**

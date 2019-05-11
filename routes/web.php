@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');    
+    return view('welcome');
 });
 
 Route::group(
@@ -20,10 +20,11 @@ Route::group(
     'prefix' => 'admin',
     'namespace' => 'admin'
     ], function()
-    {    
+    {
     Route::get('/', 'DashboardController@index');
     Route::get('category', 'CategorizationContraller@category');
     Route::get('category/create', 'CategorizationContraller@createCategory');
+    Route::post('category/store', 'CategorizationContraller@store');
     Route::get('subcategory', 'CategorizationContraller@subcategory');
     Route::get('subcategory/create', 'CategorizationContraller@createsubCategory');
     });
@@ -33,7 +34,7 @@ Route::group(
     'prefix' => 'partner',
     'namespace' => 'partner'
     ], function()
-    {    
+    {
     Route::resource('/', 'DashboardController');
     Route::resource('profile', 'ProfileController');
     Route::resource('company_profile', 'CompanyProfileController');
@@ -61,4 +62,3 @@ Route::group(
     Route::resource('training', 'TrainingController');
 
     });
-    
